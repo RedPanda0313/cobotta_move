@@ -1,0 +1,16 @@
+<launch>
+    <arg name="dof" default="6"/>
+    <arg name="hz" default="250"/>
+    <arg name="sim" default="true"/>
+    <arg name="init_time" default="45"/>
+    <arg name="loop_time" default="60"/>
+    <arg name="mode" default="0"/>
+    <node pkg="cobotta_move" type="move_test2" name="control_node" output="screen" >
+        <param name="dof" value="$(arg dof)" />
+        <param name="hz" value="$(arg hz)"/>
+        <param name="init_time" value="$(arg init_time)"/>
+        <param name="loop_time" value="$(arg loop_time)"/>
+        <param name="mode" value="$(arg mode)"/>
+        <param name="sim" value="$(arg sim)"/>
+    </node>
+</launch>

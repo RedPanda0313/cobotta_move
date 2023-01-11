@@ -1,0 +1,6 @@
+<robot file="cobotta_r.dae">
+        <Manipulator name="cobotta_r">
+          <base>world</base>
+          <effector>J6</effector>
+        </Manipulator>
+</robot>
